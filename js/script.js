@@ -1,4 +1,19 @@
 
+
+
+const carousel = document.getElementById('carousel');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+prevBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -300, behavior: 'smooth' });
+});
+nextBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: 300, behavior: 'smooth' });
+});
+
+
+
 function toggleMenu() {
     document.getElementById("mobile-menu").classList.toggle("hidden");
 }
@@ -36,3 +51,52 @@ document.getElementById("toggleBtn").addEventListener("click", function () {
         this.textContent = "Voir toutes nos solutions";
     }
 });
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.classList.add('shadow-xl');
+    });
+    card.addEventListener('mouseleave', () => {
+        card.classList.remove('shadow-xl');
+    });
+});
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("successMessage").classList.remove("hidden");
+            setTimeout(() =>{
+                document.getElementById("successMessage").classList.add("hidden");
+            }, 3000);
+            this.reset();
+        });
+        function toggleText(id) {
+            let text = document.getElementById("text-" + id);
+            if (text.classList.contains("hidden")) {
+                text.classList.remove("hidden");
+            } else {
+                text.classList.add("hidden");
+            }
+        }
+        document.querySelectorAll(".accordion-btn").forEach(button => {
+            button.addEventListener("click", () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector(".icon");
+        
+                // Fermer tous les autres éléments ouverts
+                document.querySelectorAll(".accordion-content").forEach(item => {
+                    if (item !== content) {
+                        item.classList.add("hidden");
+                        item.previousElementSibling.querySelector(".icon").textContent = "+";
+                    }
+                });
+        
+                // Basculer l'état de l'élément cliqué
+                if (content.classList.contains("hidden")) {
+                    content.classList.remove("hidden");
+                    icon.textContent = "−";
+                } else {
+                    content.classList.add("hidden");
+                    icon.textContent = "+";
+                }
+            });
+        });
+        

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bannière Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Section de la bannière -->
+    <div class="flex flex-col items-center justify-center min-h-screen space-y-6">
+        <!-- Bannière -->
+        <div class="w-3/4 bg-white rounded-lg shadow-lg py-16 flex items-center justify-center">
+            <h1 class="text-4xl font-bold text-gray-900">Bannière</h1>
+        </div>
+
+        <!-- Texte en dessous -->
+        <div class="text-center">
+            <p class="text-xl text-gray-700 font-semibold">Pour la protection de vos</p>
+            <p class="text-2xl font-bold text-gray-900">
+                <span class="text-blue-500">patients & travailleurs</span>
+            </p>
+        </div>
+
+        <!-- Bouton -->
+        <button class="mt-4 px-6 py-3 bg-black text-white rounded-full flex items-center space-x-2 shadow-lg hover:bg-gray-800 transition">
+            <span>Découvrir</span>
+            <span class="ml-2">➡️</span>
+        </button>
+    </div>
+    <div class="relative bg-sky-500 text-white py-6 px-6 overflow-hidden text-center py-10">
+<h2 class="text-6xl font-extrabold text-white drop-shadow-lg">
+               sante
+            </h2>
+    </div>
+            <div class="w-3/4 bg-white rounded-lg p-10 flex flex-col w-full h-full items-center">
+        
+                <!-- Image à gauche -->
+                <div class="w-full md:w-1/2">
+                    <img src="assets/med.png" alt="Médecins" class="rounded-lg shadow-md">
+                </div>
+        
+                <!-- Texte à droite -->
+                <div class="w-full md:w-1/2 p-6">
+                    <h2 class="text-3xl font-bold text-gray-900">Titre H2 - <span class="text-blue-500">C’est quoi ?</span></h2>
+                    <p class="text-gray-700 mt-4">
+                        Améliorez la prise en charge de votre patient en diminuant son exposition, tout en conservant une image suffisamment informative.
+                    </p>
+                    <p class="text-gray-700 mt-4">
+                        Notre pôle de conseil en Physique Médicale se compose d’une équipe pluridisciplinaire : médecins, ingénieurs biomédicaux et coordinateurs techniques.
+                    </p>
+                    <button class="mt-6 px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition">
+                        Demande de renseignements →
+                    </button>
+                </div>
+            </div>
+    <section class="text-center py-10">
+        
+        
+        <div class="relative bg-sky-500 text-white py-6 px-6 overflow-hidden">
+    <h2 class="text-6xl font-extrabold text-white drop-shadow-lg">
+                  pour vous
+                </h2>
+       
+        <h4 class="mb-12">Assurer la sécurité de vos collaborateurs et infrastructures est une priorité. Nous vous proposons des solutions adaptées pour prévenir les risques
+            , garantir la conformité et protéger ce qui compte le plus.</h4>
+       
+        <div class="p-6 mt-6">
+            <!-- First Row of Cards -->
+            <div class="flex space-x-6 justify-center" id="row1">
+    <div class="card">
+        <div class="bg-gray-100 p-6 rounded-lg relative">
+         
+            <img src="./assets/doo.jpg" alt="Icon" class="mx-auto">
+        </div>
+        <h3 class="mt-4 text-lg font-bold text-wihte-600">dentistes</h3>
+    
+    </div>
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="bg-gray-100 p-6 rounded-lg relative">
+            <img src="./assets/imarige.png" alt="Icon" class="mx-auto">
+        </div>
+        <h3 class="mt-4 text-lg font-bold text-wihte-600">Imagerie Médicale</h3>
+     
+    </div>
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="bg-gray-100 p-6 rounded-lg relative">
+            
+            <img src="./assets/laborat.jpg" alt="Icon" class="mx-auto">
+        </div>
+        <h3 class="mt-4 text-lg font-bold text-wihte-600">Médecine nucléaire</h3>
+        
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+  
+      <div class="space-y-4">
+          <!-- Question 1 -->
+          <div class="border-b border-gray-300">
+              <button class="accordion-btn w-full text-left py-3 px-4 flex justify-between items-center text-lg font-medium text-gray-700 hover:text-blue-500 transition">
+                  Why is the moon sometimes out during the day?
+                  <span class="icon">+</span>
+              </button>
+              <div class="accordion-content hidden px-4 pb-3 text-gray-600">
+                  The moon is visible during the day because it reflects sunlight, just like at night.
+              </div>
+          </div>
+  
+          <!-- Question 2 -->
+          <div class="border-b border-gray-300">
+              <button class="accordion-btn w-full text-left py-3 px-4 flex justify-between items-center text-lg font-medium text-gray-700 hover:text-blue-500 transition">
+                  Why is the sky blue?
+                  <span class="icon">+</span>
+              </button>
+              <div class="accordion-content hidden px-4 pb-3 text-gray-600">
+                  The sky appears blue due to the scattering of sunlight by Earth's atmosphere.
+              </div>
+          </div>
+  
+          <!-- Question 3 -->
+          <div class="border-b border-gray-300">
+              <button class="accordion-btn w-full text-left py-3 px-4 flex justify-between items-center text-lg font-medium text-gray-700 hover:text-blue-500 transition">
+                  How much does the Earth weigh?
+                  <span class="icon">+</span>
+              </button>
+              <div class="accordion-content hidden px-4 pb-3 text-gray-600">
+                  Earth weighs approximately 5.97 × 10^24 kilograms.
+              </div>
+          </div>
+      </div>
+  </div>
+  
+</body>
+</html>
