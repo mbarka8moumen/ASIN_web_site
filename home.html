@@ -32,62 +32,233 @@
                     </a>
                     
                     <div class="hidden md:flex space-x-6 text-lg">
+
+                        <!-- Secteurs -->
                         <div class="relative group">
                             <button class="hover:text-[#52E3A7] flex items-center font-medium">
                                 Secteurs <span class="ml-1"></span> <img src="./assets/down.png" class="w-4 h-4 ml-1" alt="Dropdown Arrow"/>
                             </button>
                             <!-- Dropdown Menu -->
-    <div class="absolute hidden bg-white shadow-lg rounded-md mt-3 w-56 group-hover:block border border-gray-200">
-        <!-- Santé -->
-        <a href="#" class="flex items-center space-x-3 px-4 py-2 hover:bg-gray-100">
-            <img src="./assets/sante-icon.png" class="w-5 h-5" alt="Santé Icon">
-            <span class="text-gray-800 font-medium">Santé</span>
-        </a>
+                            <div class="absolute z-50 shadow-lg rounded-md mt-3 w-56 group-hover:block border border-gray-200 bg-gray-900 text-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
 
-        <!-- Enjeux -->
-        <a href="#" class="flex items-center space-x-3 px-4 py-2 hover:bg-gray-100">
-            <img src="./assets/enjeux-icon.png" class="w-5 h-5" alt="Enjeux Icon">
-            <span class="text-gray-800 font-medium">Enjeux</span>
-        </a>
-
-        <!-- Cibles -->
-        <a href="#" class="flex items-center space-x-3 px-4 py-2 hover:bg-gray-100">
-            <img src="./assets/cibles-icon.png" class="w-5 h-5" alt="Cibles Icon">
-            <span class="text-gray-800 font-medium">Cibles</span>
-        </a>
-
-        <!-- Formations -->
-        <a href="#" class="flex items-center space-x-3 px-4 py-2 hover:bg-gray-100">
-            <img src="./assets/formations-icon.png" class="w-5 h-5" alt="Formations Icon">
-            <span class="text-gray-800 font-medium">Formations</span>
-        </a>
+                                <div class="p-4">
+                                    <!-- Santé Section -->
+                                    <a href="#" class="block text-white font-semibold bg-blue-500 px-3 py-2 rounded-lg flex items-center space-x-2">
+                                        <span>Santé →</span>
+                                    </a>
+                                    <div class="mt-2 space-y-2">
+                                        <a href="#" class="flex items-center space-x-2 text-gray-300 hover:text-white">
+                                            <img src="./assets/Enjeux_Icon.png" alt="Enjeux Icon" class="w-5 h-5"> 
+                                            <span>Enjeux</span>
+                                        </a>
+                                        <a href="#" class="flex items-center space-x-2 text-gray-300 hover:text-white">
+                                            <img src="./assets/cible_icon.png" alt="Cibles Icon" class="w-5 h-5"> 
+                                            <span>Cibles</span>
+                                        </a>
+                                        <a href="#" class="flex items-center space-x-2 text-gray-300 hover:text-white">
+                                            <img src="./assets/Forrmation.png" alt="Formations Icon" class="w-5 h-5"> 
+                                            <span>Formations</span>
+                                        </a>
+                                    </div>
+                        
+                                    <hr class="border-gray-700 my-3">
+                        
+                                    <!-- Industrie Section -->
+                                    <a href="#" class="block text-white font-semibold bg-green-500 px-3 py-2 rounded-lg flex items-center space-x-2">
+                                        <span>Industrie →</span>
+                                    </a>
+                                    <div class="mt-2 space-y-2">
+                                        <a href="#" class="flex items-center space-x-2 text-gray-300 hover:text-white">
+                                            <img src="./assets/Enjeux_Icon.png" alt="Enjeux Icon" class="w-5 h-5"> 
+                                            <span>Enjeux</span>
+                                        </a>
+                                        <a href="#" class="flex items-center space-x-2 text-gray-300 hover:text-white">
+                                            <img src="./assets/cible_icon.png" alt="Cibles Icon" class="w-5 h-5"> 
+                                            <span>Cibles</span>
+                                        </a>
+                                        <a href="#" class="flex items-center space-x-2 text-gray-300 hover:text-white">
+                                            <img src="./assets/Forrmation.png" alt="Formations Icon" class="w-5 h-5"> 
+                                            <span>Formations</span>
+                                        </a>
+                                    </div>
+                                </div>
         
     </div>
 </div>
-                        <div class="relative group">
-                            <button class="hover:text-[#52E3A7] flex items-center font-medium">
-                                Solutions <img src="./assets/down.png" class="w-4 h-4 ml-1" alt="Dropdown Arrow"/>
-                            </button>
-                            <div class="absolute hidden bg-white shadow-lg rounded-md mt-3 w-48 group-hover:block">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Option 1</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Option 2</a>
+
+                <!-- Solutions -->
+                <div class="relative group">
+                   
+                    <button class="hover:text-[#52E3A7] flex items-center font-medium">
+                        Solutions
+                        <img src="./assets/down.png" class="w-4 h-4 ml-1" alt="Dropdown Arrow"/>
+                    </button>
+                
+                    <!-- DropDown menu -->
+                    <div class="absolute left-0 mt-2 w-80 group-hover:block border border-gray-200 bg-gray-900  text-white shadow-lg rounded-md opacity-0 invisible 
+                                group-hover:opacity-100 group-hover:visible 
+                                hover:opacity-100 hover:visible 
+                                transition-opacity duration-300 z-50">
+                        <div class="p-4">
+                            <div class="grid grid-cols-2 gap-6">
+                                <!-- Sécurité -->
+                                <div>
+                                    <h3 class="bg-[#1E90FF] text-white px-3 py-1 rounded-md text-sm font-semibold">Sécurité →</h3>
+                                    <ul class="mt-2 space-y-1 text-sm">
+                                        <li>Radioprotection</li>
+                                        <li>Physique médicale</li>
+                                        <li>Sécurité IRM</li>
+                                        <li>Bureau d’études</li>
+                                        <li>Radon</li>
+                                    </ul>
+                                </div>
+                                <!-- Qualité -->
+                                <div>
+                                    <h3 class="bg-green-600 text-white px-3 py-1 rounded-md text-sm font-semibold">Qualité →</h3>
+                                    <ul class="mt-2 space-y-1 text-sm">
+                                        <li>Certifications / Labels</li>
+                                        <li>Qual'Imagerie</li>
+                                    </ul>
+                                </div>
+                                <!-- Performance -->
+                                <div>
+                                    <h3 class="bg-blue-500 text-white px-3 py-1 rounded-md text-sm font-semibold">Performance →</h3>
+                                    <ul class="mt-2 space-y-1 text-sm">
+                                        <li>EXO</li>
+                                        <li>RSE</li>
+                                    </ul>
+                                </div>
+                                <!-- Solutions Digitales -->
+                                <div>
+                                    <h3 class="bg-green-500 text-white px-3 py-1 rounded-md text-sm font-semibold">Solution digitales →</h3>
+                                    <ul class="mt-2 space-y-1 text-sm">
+                                        <li>ABGX</li>
+                                        <li>My DU</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-4 p-3 bg-gradient-to-r from-blue-400 to-green-400 text-white text-sm rounded-md">
+                                <a href="#" class="block text-center">Toutes nos solutions →</a>
                             </div>
                         </div>
-                        <div class="relative group">
-                            <button class="hover:text-[#52E3A7] flex items-center font-medium">
-                                Formations <img src="./assets/down.png" class="w-4 h-4 ml-1" alt="Dropdown Arrow"/>
-                            </button>
-                            <div class="absolute hidden bg-white shadow-lg rounded-md mt-3 w-48 group-hover:block">
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Cours 1</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Cours 2</a>
+                    </div>
+                </div>
+                
+                
+                
+
+
+                <!-- Formation -->
+                <div class="relative group">
+                    
+                    <button class="hover:text-[#52E3A7] flex items-center font-medium">
+                        Formations
+                        <img src="./assets/down.png" class="w-4 h-4 ml-1" alt="Dropdown Arrow"/>
+                    </button>
+                
+                    <!-- DropDown menu-->
+                    <div class="absolute left-0 mt-2 w-80 group-hover:block border border-gray-200 bg-gray-900 text-white shadow-lg rounded-lg opacity-0 invisible 
+                                group-hover:opacity-100 group-hover:visible 
+                                hover:opacity-100 hover:visible 
+                                transition-opacity duration-300 z-50">
+                        <div class="p-4">
+                            <div class="grid grid-cols-2 gap-6">
+                                <!-- Radioprotection -->
+                                <div>
+                                    <h3 class="text-white font-semibold">Radioprotection</h3>
+                                    <p class="text-gray-400 text-sm">Lorem Ipsum is simply dummy</p>
+                                </div>
+                                <!-- PCR -->
+                                <div>
+                                    <h3 class="text-white font-semibold">PCR</h3>
+                                    <p class="text-gray-400 text-sm">Lorem Ipsum is simply dummy</p>
+                                </div>
+                                <!-- Prévention des risques -->
+                                <div>
+                                    <h3 class="text-white font-semibold">Prévention des risques</h3>
+                                    <p class="text-gray-400 text-sm">Lorem Ipsum is simply dummy</p>
+                                </div>
+                                <!-- Qualité -->
+                                <div>
+                                    <h3 class="text-white font-semibold">Qualité</h3>
+                                    <p class="text-gray-400 text-sm">Lorem Ipsum is simply dummy</p>
+                                </div>
+                                <!-- Pluridisciplinaires -->
+                                <div>
+                                    <h3 class="text-white font-semibold">Pluridisciplinaires</h3>
+                                    <p class="text-gray-400 text-sm">Lorem Ipsum is simply dummy</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 p-3 bg-gradient-to-r from-blue-400 to-green-400 text-white text-sm rounded-md">
+                                <a href="#" class="block text-center">Toutes nos formations →</a>
                             </div>
                         </div>
-                        <div class="hover:text-[#52E3A7] font-medium">
-                            <a href="#">Ressources</a>
+                    </div>
+                </div>
+                
+
+
+                        <!-- Ressources -->
+                        <div class="relative group">
+                           
+                            <button class="hover:text-[#52E3A7] flex items-center font-medium">
+                                Ressources
+                                <img src="./assets/down.png" class="w-4 h-4 ml-1" alt="Dropdown Arrow"/>
+                            </button>
+                        
+                            <!-- DropDown menu-->
+                            <div class="absolute left-0 mt-2 w-80 group-hover:block border border-gray-200 bg-gray-900 text-white shadow-lg rounded-lg opacity-0 invisible 
+                                        group-hover:opacity-100 group-hover:visible 
+                                        hover:opacity-100 hover:visible 
+                                        transition-opacity duration-300 z-50">
+                                <div class="p-4">
+                                    <div class="grid grid-cols-2 gap-6">
+                                        <!-- Blog -->
+                                        <div class="flex items-start gap-2">
+                                            <img src="./assets/Blog_icon.png" class="w-6 h-6" alt="Blog Icon">
+                                            <div>
+                                                <h3 class="text-white font-semibold">Blog</h3>
+                                                <p class="text-gray-400 text-sm">Lorem Ipsum is simply dummy</p>
+                                            </div>
+                                        </div>
+                                        <!-- Studycases -->
+                                        <div class="flex items-start gap-2">
+                                            <img src="./assets/case-study.png" class="w-6 h-6" alt="Study Icon">
+                                            <div>
+                                                <h3 class="text-white font-semibold">Studycases</h3>
+                                                <p class="text-gray-400 text-sm">Lorem Ipsum is simply dummy</p>
+                                            </div>
+                                        </div>
+                                        <!-- Outils ASCND -->
+                                        <div class="flex items-start gap-2">
+                                            <img src="./assets/outils.png" class="w-6 h-6" alt="Tools Icon">
+                                            <div>
+                                                <h3 class="text-white font-semibold">Outils ASCND</h3>
+                                                <p class="text-gray-400 text-sm">Lorem Ipsum is simply dummy</p>
+                                            </div>
+                                        </div>
+                                        <!-- Webinar -->
+                                        <div class="flex items-start gap-2">
+                                            <img src="./assets/Forrmation.png" class="w-6 h-6" alt="Webinar Icon">
+                                            <div>
+                                                <h3 class="text-white font-semibold">Webinar</h3>
+                                                <p class="text-gray-400 text-sm">Lorem Ipsum is simply dummy</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
+
+
+
+
+
+                        <!-- Asis -->
                         <div class="relative group">
                             <button class="hover:text-[#52E3A7] flex items-center font-medium">
-                                Asin <img src="./assets/down.png" class="w-4 h-4 ml-1" alt="Dropdown Arrow"/>
+                                Asis <img src="./assets/down.png" class="w-4 h-4 ml-1" alt="Dropdown Arrow"/>
                             </button>
                             <div class="absolute hidden bg-white shadow-lg rounded-md mt-3 w-48 group-hover:block">
                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Option 1</a>
